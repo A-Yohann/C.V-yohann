@@ -1,0 +1,209 @@
+/**page html complète**/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/**le corps de la page**/
+body{
+    display: flex;
+    justify-content: center;
+    
+    background-color: #fff;
+    line-height: 1.6;
+    width: 100%;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    color: #17abb3;
+}
+/**l'en-tete**/
+header{
+    max-width: 1160px;
+    background-color: #17abb3;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.profile-img {
+    display: flex;
+    justify-content: flex-start;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.zoom :hover{
+    cursor: zoom-in;
+}
+
+.block{
+    display: flex;
+
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex-gap{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+
+.lien{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+/**la partie principale du CV**/
+.main-content {
+    padding: 2rem;
+    width: 65%;
+    order: 2;
+    
+    
+}
+.title{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-family: "Lato", sans-serif;
+    
+}
+.info:hover{
+    background-color: rgba(51, 51, 51, 0.116);
+    border-left: 3px solid #17abb3;
+    
+}
+.indenter{
+    text-indent: 5%;
+}
+.date{
+    color: #17abb3;
+    font-size: 0.9rem;
+    text-align: right;
+}
+.flex{
+    display: flex;
+    
+}
+.column{
+    flex-direction: column;
+}
+
+/** La partie gauche du CV**/
+aside{
+    background-color: rgba(51, 51, 51, 0.235);
+    padding: 2rem;
+    width: 30%;
+    order: 1;
+}
+
+.stars {
+    display: flex;
+    justify-content: right;
+}
+.star {
+    margin-right: 2px;
+    font-size: 14px;
+    color: #17abb3;
+}
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10%;
+    
+    
+}
+.language{
+    display: flex;
+    /* justify-content: right; */
+    flex-direction: column;
+}
+
+.li-language{
+
+    list-style: none;
+}
+
+.list-items {
+    
+    margin-bottom: 0.5rem;
+}
+
+ul{
+    list-style: square;
+}
+ul ::marker{
+    color: #17abb3;
+    
+}
+.center-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title-competence{
+    color: #17abb3;
+}
+.block2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.checked{
+    color: #17abb3;
+}
+
+/**Le pied de page**/
+footer{
+    background-color: #17abb3;
+    padding: 10px;
+}
+.reseau{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+.donnee{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.liens{
+    color: #fff;
+    text-decoration: inherit;
+    
+}
+.opacity :hover{
+    opacity: 0.250;
+}
