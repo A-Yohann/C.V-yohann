@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,7 +7,7 @@
   <title>CV — Yohann Dufresne</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -16,10 +17,12 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
 
-      <div>
-        <img src="./assets//img/photoCV.jpg" alt="Photo de profil" class="sidebar__avatar">
+      <div class="sidebar__avatar-wrap">
+        <div class="sidebar__avatar-placeholder">
+          <img src="assets/img/photo-de-profil.jpg" alt="Photo de Yohann Dufresne" class="sidebar__avatar">
+        </div>
         <p class="sidebar__name">Yohann<br>Dufresne</p>
-        <p class="sidebar__title">Développeur web fullstack</p>
+        <p class="sidebar__title">Étudiant Cybersécurité & Réseaux</p>
       </div>
 
       <div>
@@ -31,7 +34,7 @@
           <i class="fa fa-phone"></i> 06.31.28.44.64
         </a>
         <span class="sidebar__contact-item">
-          <i class="fa fa-map-marker-alt"></i> 24130 La Force, France
+          <i class="fa fa-map-marker-alt"></i> La Force, France
         </span>
         <span class="sidebar__contact-item">
           <i class="fa fa-car"></i> Permis B
@@ -44,29 +47,13 @@
       <div>
         <p class="sidebar__section-title">Compétences</p>
         <div class="sidebar__tag-list">
-          <span class="sidebar__tag">HTML</span>
-          <span class="sidebar__tag">CSS</span>
-          <span class="sidebar__tag">SCSS</span>
-          <span class="sidebar__tag">Tailwind</span>
-          <span class="sidebar__tag">JavaScript</span>
-          <span class="sidebar__tag">React</span>
+          <span class="sidebar__tag">Cisco Packet Tracer</span>
+          <span class="sidebar__tag green">Adressage IP (en cours)</span>
+          <span class="sidebar__tag green">Routage (en cours)</span>
           <span class="sidebar__tag">PHP</span>
           <span class="sidebar__tag">Symfony</span>
-          <span class="sidebar__tag">UX Design</span>
-          <span class="sidebar__tag">Figma</span>
-        </div>
-      </div>
-
-      <div>
-        <p class="sidebar__section-title">Outils</p>
-        <div class="sidebar__tag-list">
-          <span class="sidebar__tag">Git</span>
-          <span class="sidebar__tag">GitHub</span>
-          <span class="sidebar__tag">Bootstrap</span>
-          <span class="sidebar__tag">o2switch</span>
-          <span class="sidebar__tag">phpMyAdmin</span>
-          <span class="sidebar__tag">Figma</span>
-          <span class="sidebar__tag">VS Code</span>
+          <span class="sidebar__tag">HTML / CSS</span>
+          <span class="sidebar__tag">JavaScript</span>
         </div>
       </div>
 
@@ -74,39 +61,27 @@
         <p class="sidebar__section-title">Langues</p>
         <div class="sidebar__lang-item">
           <span>Français</span>
-          <div class="sidebar__lang-dots">
-            <div class="sidebar__lang-dot filled"></div>
-            <div class="sidebar__lang-dot filled"></div>
-            <div class="sidebar__lang-dot filled"></div>
-            <div class="sidebar__lang-dot filled"></div>
-            <div class="sidebar__lang-dot filled"></div>
-          </div>
+          <span class="sidebar__lang-level">Natif</span>
         </div>
         <div class="sidebar__lang-item">
           <span>Anglais</span>
-          <div class="sidebar__lang-dots">
-            <div class="sidebar__lang-dot filled"></div>
-            <div class="sidebar__lang-dot filled"></div>
-            <div class="sidebar__lang-dot"></div>
-            <div class="sidebar__lang-dot"></div>
-            <div class="sidebar__lang-dot"></div>
-          </div>
+          <span class="sidebar__lang-level">B1</span>
         </div>
       </div>
 
       <div>
         <p class="sidebar__section-title">Soft Skills</p>
-        <p class="sidebar__soft">Esprit d'équipe</p>
+        <p class="sidebar__soft">Autodidacte</p>
+        <p class="sidebar__soft">Rigueur</p>
+        <p class="sidebar__soft">Curiosité technique</p>
         <p class="sidebar__soft">Autonomie</p>
-        <p class="sidebar__soft">Organisation</p>
-        <p class="sidebar__soft">Relation client</p>
-        <p class="sidebar__soft">Curiosité</p>
+        <p class="sidebar__soft">Sens du service</p>
       </div>
 
       <div class="sidebar__social">
-        <a href="https://github.com/A-Yohann" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://yohanndufresne.fr" target="_blank"><i class="fa fa-globe"></i></a>
+        <a href="https://github.com/A-Yohann" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://yohanndufresne.fr" target="_blank" title="Portfolio"><i class="fa fa-globe"></i></a>
       </div>
 
     </aside>
@@ -117,112 +92,153 @@
       <section>
         <p class="main__section-title">Profil</p>
         <p class="main__profil">
-          Passionné par le développement web, j'ai commencé à coder en autodidacte avant d'intégrer la formation
-          DWWM à Talis Business School à Périgueux. Anciennement mécanicien automobile pendant 4 ans,
-          j'ai développé rigueur, autonomie et sens du service. Je recherche une alternance pour mettre
-          en pratique mes compétences en développement fullstack et continuer à progresser.
+          Passionné par la cybersécurité et les réseaux, je prépare un Bachelor Informatique & Cybersécurité à l'IPSSI Bordeaux. Développeur web en formation (PHP, Symfony, JS), j'ai réalisé plusieurs projets concrets en autodidacte. Je recherche une alternance pour progresser aux côtés d'équipes expertes en sécurité informatique.
         </p>
       </section>
-      
-      <button class="btn-pdf" onclick="window.print()">⬇ Télécharger en PDF</button>
 
       <section>
-        <p class="main__section-title">Formations</p>
+        <p class="main__section-title">Formation</p>
         <div class="timeline">
+
+          <div class="timeline__item">
+            <div class="timeline__date">Oct. 2026</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
+            <div class="timeline__content">
+              <p class="timeline__title">Bachelor Informatique & Cybersécurité <span class="badge blue">À venir</span></p>
+              <p class="timeline__subtitle">IPSSI — Bordeaux</p>
+              <p class="timeline__desc">Réseaux, administration systèmes, cybersécurité, Cisco. Orientation SecOps / pentest.</p>
+            </div>
+          </div>
+
           <div class="timeline__item">
             <div class="timeline__date">En cours</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
             <div class="timeline__content">
-              <p class="timeline__title">Titre Professionnel DWWM</p>
+              <p class="timeline__title">Titre Professionnel DWWM <span class="badge">En cours</span></p>
               <p class="timeline__subtitle">Talis Business School — Périgueux</p>
-              <p class="timeline__desc">Développeur Web et Web Mobile. Formation complète full-stack : front-end (HTML, CSS, JS, React) et back-end (PHP, Symfony).</p>
+              <p class="timeline__desc">Formation full-stack : HTML, CSS, JavaScript, PHP, Symfony.</p>
             </div>
           </div>
+
           <div class="timeline__item">
-            <div class="timeline__date">Jan. — Juil. 2024</div>
-            <div class="timeline__content">
-              <p class="timeline__title">Formation interne</p>
-              <p class="timeline__subtitle">Volkswagen — Angers</p>
-              <p class="timeline__desc">Formation technique sur les véhicules du groupe VAG, incluant les véhicules électriques.</p>
+            <div class="timeline__date">2020 — 2022</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
             </div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__date">2021 — 2022</div>
             <div class="timeline__content">
-              <p class="timeline__title">Mention Complémentaire Mécanique</p>
+              <p class="timeline__title">CAP + MC Mécanique Automobile</p>
               <p class="timeline__subtitle">CFA — Bergerac</p>
             </div>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__date">2020 — 2021</div>
-            <div class="timeline__content">
-              <p class="timeline__title">CAP Mécanique Automobile</p>
-              <p class="timeline__subtitle">CFA — Bergerac</p>
-            </div>
-          </div>
+
         </div>
       </section>
 
       <section>
         <p class="main__section-title">Expériences professionnelles</p>
         <div class="timeline">
+
           <div class="timeline__item">
-            <div class="timeline__date">Juil. 2023<br>Avr. 2024</div>
+            <div class="timeline__date">Mars —<br>Mai 2026</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
             <div class="timeline__content">
-              <p class="timeline__title">Mécanicien automobile</p>
-              <p class="timeline__subtitle">Volkswagen — Angers (49)</p>
-              <p class="timeline__desc">Entretien courant et grosse mécanique (dépose EGR, turbo, embrayage). Dépose batterie des véhicules électriques du groupe VAG.</p>
+              <p class="timeline__title">Stagiaire développeur web</p>
+              <p class="timeline__subtitle">Maximilien R. — Freelance</p>
+              <p class="timeline__desc">Développement et mise en ligne de <a href="https://tonassistant.fr" style="color: var(--accent); text-decoration: none;">tonassistant.fr</a> — assistant personnel en PHP/Symfony.</p>
             </div>
           </div>
+
           <div class="timeline__item">
-            <div class="timeline__date">Avr. — Juin 2023</div>
+            <div class="timeline__date">Sept. 2021<br>Avr. 2024</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
             <div class="timeline__content">
               <p class="timeline__title">Mécanicien automobile</p>
-              <p class="timeline__subtitle">Nissan — Bergerac (24)</p>
-              <p class="timeline__desc">Entretien des véhicules et grosse mécanique (dépose boîte, turbo, EGR).</p>
+              <p class="timeline__subtitle">Norauto, Nissan, Volkswagen</p>
+              <p class="timeline__desc">4 ans d'expérience en entretien et grosse mécanique. Développement de la rigueur, méthode et relation client.</p>
             </div>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__date">Sept. 2021<br>Avr. 2023</div>
-            <div class="timeline__content">
-              <p class="timeline__title">Mécanicien automobile</p>
-              <p class="timeline__subtitle">Norauto — Pineuilh (33)</p>
-              <p class="timeline__desc">Entretien des véhicules et grosse mécanique (dépose boîte, turbo, EGR).</p>
-            </div>
-          </div>
+
         </div>
       </section>
 
       <section>
         <p class="main__section-title">Projets</p>
         <div class="timeline">
+
           <div class="timeline__item">
             <div class="timeline__date">2025 — 2026</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
             <div class="timeline__content">
-              <p class="timeline__title">Portfolio personnel</p>
-              <p class="timeline__subtitle">React · Bootstrap · PHP · o2switch</p>
-              <p class="timeline__desc">Portfolio fullstack déployé sur o2switch avec formulaire de contact PHP, React Router et responsive design.</p>
+              <p class="timeline__title">Simulations réseau</p>
+              <p class="timeline__subtitle">Cisco Packet Tracer · Adressage IP · Routage</p>
+              <p class="timeline__desc">Topologies réseau : adressage IP, routage statique, switchs.</p>
             </div>
           </div>
+
           <div class="timeline__item">
             <div class="timeline__date">2026</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
             <div class="timeline__content">
-              <p class="timeline__title">Ton Assistant</p>
-              <p class="timeline__subtitle">PHP · Symfony · tonassistant.fr</p>
-              <p class="timeline__desc">Assistant personnel développé en Symfony, hébergé sur o2switch.</p>
+              <p class="timeline__title">F1 Zone</p>
+              <p class="timeline__subtitle">PHP · Symfony · f1-zone.duyo5958.odns.fr</p>
+              <p class="timeline__desc">Site d'actualité et de résultats sur la saison F1 2024.</p>
             </div>
           </div>
+
           <div class="timeline__item">
             <div class="timeline__date">2026</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
             <div class="timeline__content">
-              <p class="timeline__title">F1 Zone & Horloge Ancienne</p>
-              <p class="timeline__subtitle">PHP · Symfony</p>
-              <p class="timeline__desc">Sites web développés en PHP/Symfony, déployés sur sous-domaines o2switch.</p>
+              <p class="timeline__title">Darkest Fight Arena</p>
+              <p class="timeline__subtitle">PHP · Symfony · darkest-fight-arena.sc7duyo5958.universe.wf</p>
+              <p class="timeline__desc">Jeu de combat développé en PHP/Symfony.</p>
             </div>
           </div>
+
+          <div class="timeline__item">
+            <div class="timeline__date">2025 — 2026</div>
+            <div class="timeline__line">
+              <div class="timeline__dot"></div>
+              <div class="timeline__connector"></div>
+            </div>
+            <div class="timeline__content">
+              <p class="timeline__title">Horloge Ancienne</p>
+              <p class="timeline__subtitle">PHP · Symfony · horloge-ancienne.duyo5958.odns.fr</p>
+              <p class="timeline__desc">Projet de formation réalisé en Symfony.</p>
+            </div>
+          </div>
+
+          
+
         </div>
       </section>
 
     </main>
   </div>
+
+  <button class="btn-pdf" onclick="window.print()">⬇ PDF</button>
+
 </body>
 </html>
