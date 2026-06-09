@@ -277,7 +277,35 @@ body {
   line-height: 1.6;
 }
 
+.btn-pdf {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: background 0.2s;
+}
+
+.btn-pdf:hover { background: #333; }
+
 /* ===== PRINT ===== */
+@media print {
+  .btn-pdf { display: none; }
+  @page { margin: 0; size: A4; }
+  body { margin: 0; }
+}
+
+
 @media print {
   body { background: #fff; padding: 0; }
   .cv { box-shadow: none; }
